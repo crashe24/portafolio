@@ -8,6 +8,8 @@ import { PortafolioComponent } from './components/portafolio/portafolio.componen
 import { AboutComponent } from './components/about/about.component';
 import { PorfolioItemComponent } from './components/porfolio-item/porfolio-item.component';
 
+//rutas
+import { app_routing } from './app.routes';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { PorfolioItemComponent } from './components/porfolio-item/porfolio-item.
     PorfolioItemComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    app_routing
   ],
   providers: [],
   bootstrap: [AppComponent]
