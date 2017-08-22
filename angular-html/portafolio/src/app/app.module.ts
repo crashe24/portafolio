@@ -15,6 +15,7 @@ import { app_routing } from './app.routes';
 
 //servicios
 import { InformacionService } from './services/informacion.service';
+import { ProductosService } from './services/productos.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { InformacionService } from './services/informacion.service';
     app_routing,
     HttpModule
   ],
-  providers: [InformacionService],
+  providers: [InformacionService,ProductosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
