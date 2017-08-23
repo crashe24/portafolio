@@ -25,4 +25,10 @@ export class ProductosService {
         })
     }
   }
+
+  //servicio para cargar el producto mediante su identificador
+
+  cargarProducto( cod:string ){
+    return this._http.get(`https://paginaweb-143f7.firebaseio.com/productos/${cod}.json`);
+  }
 }
