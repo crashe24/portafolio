@@ -10,7 +10,7 @@ export class HeaderComponent{
   constructor(public _is:InformacionService, public router:Router) { }
 
 buscarProducto(termino:string){
-  console.log(termino);
+  //console.log(termino);
   this.router.navigate(['buscar', termino]);
 }
 

@@ -14,11 +14,11 @@ export class PorfolioItemComponent  {
     constructor( public _ar:ActivatedRoute , public _ps:ProductosService) {
     _ar.params.subscribe( parametros => {
        this.cod = parametros['id'];
-      console.log(parametros);
-      console.log(parametros['id']);
+      // console.log(parametros);
+      // console.log(parametros['id']);
       _ps.cargarProducto(this.cod).subscribe(
         data => {
-          console.log(data.json());
+        //  console.log(data.json());
           this.producto = data.json();
         }
       )
